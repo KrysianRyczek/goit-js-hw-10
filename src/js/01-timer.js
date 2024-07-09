@@ -3,7 +3,7 @@ import flatpickr from "flatpickr";
 import iziToast from "izitoast";
 // Dodatkowy import stylów
 import "flatpickr/dist/flatpickr.min.css";
-//import "izitoast/dist/css/izitoast.min.css";
+import "izitoast/dist/css/iziToast.min.css";
 let ms;
 
 function convertMs(ms) {
