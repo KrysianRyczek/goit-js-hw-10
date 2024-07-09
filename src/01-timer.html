@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- <link rel="stylesheet" href="iziToast.min.css"> -->
+        <link rel="stylesheet" href="./css/01-timer.css">
+        <!-- <script src="iziToast.min.js" type="text/javascript"></script> -->
+        <script type="module" src="./js/01-timer.js" defer></script>
+        
+
+    </head>
+    <body>
+
+
+
+
+
+        <div class="flatpickr">
+            <input type="text" placeholder="Select Date.." id="dateSelector" data-input>
+
+            <a class="input-button" title="toggle" data-toggle>
+                <i class="icon-calendar"></i>
+            </a>
+
+            <a class="input-button" title="clear" data-clear>
+                <i class="icon-close"></i>
+            </a>
+            <button type="button" id="start" data-start>Start</button>
+         </div>
+        
+        <div class="timer">
+            <div class="field">
+                <span class="value" id ="days" data-days>00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="field">
+                <span class="value"  id ="hours" data-hours>00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="field"> 
+                <span class="value" id ="minutes" data-minutes>00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="field">
+                <span class="value" id="seconds" data-seconds>00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+    </body>
+</html>
