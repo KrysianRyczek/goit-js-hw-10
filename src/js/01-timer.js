@@ -69,8 +69,8 @@ const fp = document.querySelector("#dateSelector").flatpickr(options)
 
 btn.disabled = true; 
 
-btn.addEventListener("click", event=>{
-
+btn.addEventListener("click", (event)=>{
+    
     const setDownTime = () =>{
         if (fp.selectedDates[0].getTime()-new Date().getTime()<0) {
             days.textContent = "00"
@@ -86,8 +86,8 @@ btn.addEventListener("click", event=>{
         minutes.textContent = timeDown.minutes.toString().padStart(2, "0")
         seconds.textContent = timeDown.seconds.toString().padStart(2, "0")
     }
-
-    const interval = setInterval(setDownTime,500);   
+    const interval = setInterval(setDownTime,500); 
+    return interval
 })
 
 
